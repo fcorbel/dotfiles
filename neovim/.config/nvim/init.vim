@@ -93,7 +93,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'benekastah/neomake'
 Plug 'rust-lang/rust.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim' "Abreviations for html
 Plug 'scrooloose/nerdtree'
 
 
@@ -102,6 +102,7 @@ call plug#end()
 autocmd! BufWritePost * Neomake
 let g:airline_powerline_fonts = 1
 
+map <C-n> :NERDTreeToggle<CR>
 
 " execute pathogen#infect()
 "

@@ -192,7 +192,6 @@ bindsym XF86ScreenSaver exec i3lock -c 000000
 exec --no-startup-id nm-applet
 
 # Automount USB
-#exec udiskie &
 exec --no-startup-id udiskie -ans && dunst &
 
 # Launch mode, one app per key.
@@ -200,7 +199,6 @@ mode "launch" {
     bindsym f exec firefox ; mode "default"
     bindsym t exec thunderbird ; mode "default"
     bindsym r exec $term -e ranger ; mode "default"
-    bindsym i exec $term -e sudo synaptic ; mode "default"
     bindsym s exec smplayer ; mode "default"
     bindsym b exec banshee ; mode "default"
     bindsym c exec $term -e "nvim /home/florian/dotfiles/i3/.i3/config" ; mode "default"
