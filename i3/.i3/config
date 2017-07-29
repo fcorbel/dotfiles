@@ -194,6 +194,9 @@ exec --no-startup-id nm-applet
 # Automount USB
 exec --no-startup-id udiskie -ans && dunst &
 
+# Battery notification
+exec xfce4-power-manager
+
 # Launch mode, one app per key.
 mode "launch" {
     bindsym f exec firefox ; mode "default"
